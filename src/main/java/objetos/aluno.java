@@ -14,11 +14,12 @@ public class aluno {
     private String telefone;
     private String dataNascimento;
     
-    public aluno (String nome, String email, String Tel, String dataNascimento){
-        this.nome = nome;
-        this.email = email;
-        this.telefone = telefone;
-        this.dataNascimento = dataNascimento;
+    public aluno (String nome, String email, String Telefone, String dataNascimento){
+        setNome(nome);
+        setEmail(email);
+        setTelefone(Telefone);
+        setDataNascimento(dataNascimento);
+       
     }
 
     

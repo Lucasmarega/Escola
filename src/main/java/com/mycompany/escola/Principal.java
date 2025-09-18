@@ -4,7 +4,7 @@
  */
 package com.mycompany.escola;
 
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 import objetos.aluno;
 
 /**
@@ -18,6 +18,7 @@ public class Principal extends javax.swing.JFrame {
      */
     public Principal() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -119,7 +120,10 @@ public class Principal extends javax.swing.JFrame {
         aluno a = new aluno (textName.getText(), textEmail.getText(),
         textTelefone.getText(), textNascimento.getText());
        a.setNome(textName.getText());
-               JOptionPane.showMessageDialog(rootPane, a.getNome());
+        resultado r = new resultado(a);
+        r.setVisible(true);
+        r.setLocationRelativeTo(this);
+               
     }//GEN-LAST:event_butCadastroActionPerformed
 
     
